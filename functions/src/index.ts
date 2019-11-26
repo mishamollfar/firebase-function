@@ -22,6 +22,7 @@ export const set_admin_right = functions.https.onRequest(async(req, res) => {
     request(
     {
         url: 'https://api.telegram.org/bot581251518:AAE-lXYjU6tR9_G9ej2Q9jqTDMjBtNi-po8/promoteChatMember',
+        // https://api.telegram.org/bot581251518:AAE-lXYjU6tR9_G9ej2Q9jqTDMjBtNi-po8/promoteChatMember?chat_id=@programirs&user_id=741077535&can_change_info=false&can_post_messages=false&can_edit_messages=false&can_delete_messages=false&can_invite_users=false&can_restrict_members=true&can_pin_messages=false&can_promote_members=false
         method: 'POST',
         headers: {'Content-Type': 'application/x-www-form-urlencoded'},
         body: JSON.stringify(data)
